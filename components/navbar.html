@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>navbar</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="jquery-3.2.1.min.js"></script>
+		<script src="../grid-system/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="../grid-system/css/bootstrap.min.css">
+	</head>
+	<body>
+		<ul class="nav nav-tabs nav-justified nav-stacked bg-danger">
+			<li><a href="#">Tab 1</a></li>
+			<li class="active"><a href="#">Tab 2</a></li>
+			<li><a href="#">Tab 3</a></li>
+			<li><a href="#">Tab 4</a></li>
+			<li><a href="#">Tab 4</a></li>
+		</ul>
+		<div class="container">
+			<ul class="nav nav-pills nav-stacked">
+				<li><a href="">Pill 1</a></li>
+				<li class="active"><a href="">Pill 2</a></li>
+				<li><a href="">Pill 3</a></li>
+				<li><a href="">Pill 4</a></li>
+			</ul>
+		</div>
+
+		<!-- Non-Collapsable Navbar -->
+
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<div class="navbar-brand">Brand</div>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="">One</a></li>
+					<li class="active"><a href="">Two</a></li>
+					<li><a href="">Three</a></li>
+					<li><a href="">Four</a></li>
+				</ul>
+			</div>
+		</nav>
+
+
+		<hr>
+
+		<!-- Collapsible Navbar -->
+
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed"
+							data-toggle="collapse"
+							data-target="#navbar-collapse-container"
+							aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="navbar-brand">
+						Brand
+					</div>
+				</div>
+
+				<div class="collapse navbar-collapse" id="navbar-collapse-container">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="">One
+						<span class="sr-only">current</span></a></li>
+						<li><a href="">Two</a></li>
+						<li><a href="">Three</a></li>
+						<li><a href="">Four</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</nav>
+	</body>
+</html>
